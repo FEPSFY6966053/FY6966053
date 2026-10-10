@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <body>
+    <button id="colorButton">Click me to change colour</button>
+
+    <script>
+      //Get a reference to the button element
+      var button= document
+    </script>
+    </body>
+  </head>
+</html>
