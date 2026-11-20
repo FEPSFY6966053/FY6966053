@@ -102,17 +102,20 @@ Coastal flooding is an increasing challenge that threatens communities, infrastr
   
  
     <h3 id="Wave Behaviour & Mangrove Structures">Wave Behaviour & Mangrove Structures</h3>
-     <p id="Wave_Behaviour_&_Mangrove_Structures_InText">
+     <p id="WaveText">
      This my wave beahviour and mangrove structures test section. 
      </p>
+    
      
          <h3 id="Mechanisms of Wave Attenuation">Mechanisms of Wave Attenuation </h3>
-     <p id="Mechanisms_of_Wave_Attenuation_InText"> Wave attenuation describes the reduction in wave height and energy as waves travel through a coastal environment. In mangrove forests, this occurs through interactions between moving water and vegetation.
+         
+     <p id="MechText"> 
+     Wave attenuation describes the reduction in wave height and energy as waves travel through a coastal environment. In mangrove forests, this occurs through interactions between moving water and vegetation.
 The roots, trunks and branches hinder water movement, creating hydrodynamic drag. This resistance transfers energy from the moving water into turbulence and other forms of energy dissipation. As a result, less wave energy reaches the landward edge of the forest.
 Field research by Horstman et al. (2014) investigated wave attenuation across mangrove areas with different vegetation densities. Their findings demonstrated that wave attenuation rates increased with the volumes of vegetation density. This suggests that the amount of vegetation within a given space can influence the effectiveness of mangroves as natural wave barriers.
 Forest width is another important factor. A wider forest provides a greater distance over which wave energy can be dissipated. Van Wesenbeeck et al. (2025) investigated this relationship through extensive numerical modelling. Their findings indicated that mangrove forests wider than 500 metres could dissipate approximately 75% or more of incoming wave energy under the modelled conditions. However, the effectiveness of narrower forests was more dependent on water levels, wave characteristics and vegetation density. 
-These findings demonstrate that mangrove performance cannot be assessed using vegetation alone. The surrounding coastal conditions must also be considered.
      </p>
+ 
  
 	<h3 id="References">References</h3>
      
@@ -170,8 +173,8 @@ These findings demonstrate that mangrove performance cannot be assessed using ve
 
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- ////////////////////////////// Word count function ////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 <hr>
@@ -191,9 +194,10 @@ These findings demonstrate that mangrove performance cannot be assessed using ve
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const WaveCount = displayWordCount("WaveText");
+    const MechCount = displayWordCount("MechText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + WaveCount + MechCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
