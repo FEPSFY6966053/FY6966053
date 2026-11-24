@@ -4,21 +4,20 @@
   <head>
     <title> University of Surrey</title>
     </head>
-
-
-<main class="paper-container">
-  <p class="course-meta">ENG0018 Computer Laboratory 2026/27
-	  Student URN: 6966053</p>
-  <h1>Conference paper: Mangroves As Coastal Defence</h1>
-</main>
-
-	
+    
 <header class="site-header">
   <body>
 	  <img src= "WebBanner 2026 .jpg" alt="University Banner" width="400" height="100">
   			<hr>  
-  			<h2 style="font-family:calbri;"><b>Conference paper: Mangroves As Coastal Defence</b></h2>  
-  		<hr>
+<main class="paper-container">
+  <p class="course-meta">ENG0018 Computer Laboratory 2026/27
+	  Student URN: 6966053</p>
+      <hr>
+  <h3 style="font-family:calbri;"><b>Conference paper: Mangroves As Coastal Defence</b></h3>
+  <hr>
+</main>
+
+	
 	  </body>
   </header>
 	  
@@ -97,7 +96,7 @@
   <h3 id="Abstract">Abstract</h3>
 <h5> 
 
-Coastal flooding is an increasing challenge that threatens communities, infrastructure and ecosystems worldwide. Traditional coastal protection methods such as seawalls and breakwaters provide effective defence against flooding but often require high initial construction costs and long-term maintenance. As a result, nature-based solutions are heavily considered within civil engineering. Mangrove forests act as natural wave attenuators by reducing wave energy before it reaches the shoreline through their dense root systems, trunks and vegetation. In addition to reducing wave height, mangroves stabilise sediment and minimise coastal erosion, contributing to the long-term resilience of coastal environments.This article evaluates the mechanisms through which mangroves reduce wave energy and assesses their advantages, limitations and potential hybrid applications. The study highlights how mangroves can be integrated with conventional coastal defences to create hybrid systems that improve flood resilience whilst also maintaining sustainability.
+Coastal flooding threatens communities, infrastructure and natural environments. Conventional defences, such as seawalls and breakwaters can protect coastlines but may be expensive to build and maintain. Mangrove forests offer another approach using their roots, trunks and branches, causing slower moving water and reduced wave energy. This article explains how mangroves affect waves, examines the factors that influence their performance and considers their limitations. It also explores how mangroves could work alongside conventional coastal structures. Research suggests that mangroves can contribute to coastal protection, although their effectiveness depends on vegetation and local conditions. They should therefore be considered as one part of a wider coastal defence strategy.
 </h5>
             
          
@@ -105,20 +104,23 @@ Coastal flooding is an increasing challenge that threatens communities, infrastr
   
   <h3 id="Introduction">Introduction</h3>
      <p id="Introduction_InText">
-     Coastal flooding is an ongoing challenge for engineers, especially in Southeast Asia where storm surges, coastal erosion and rising sea levels threaten communities and infrastructure. As pressure on existing flood defence systems increases, there is growing interest in solutions that not only provide protection but also work with natural coastal processes. Among these approaches, mangrove forests have emerged as a strong nature-based defence due to their ability to influence wave behaviour before it reaches the shoreline. Rather than resisting wave forces, mangroves reduce wave energy through their complex root systems and vegetation structure. This article evaluates how mangroves function as natural wave attenuators and examines their potential role within modern coastal flood defence systems.
+Coastal flooding is a challenge for civil engineers, particularly in regions where communities and infrastructure are exposed to storms, rising sea levels and erosion. In Southeast Asia, many coastal communities face these risks. Seawalls, revetments and breakwaters are commonly used to protect the land from waves. However, these structures require materials, construction work and ongoing maintenance. Conventional defences, such as seawalls and sea dikes, require significant investment to construct and maintain. For example, in Vietnam, upgrading the existing sea dike system was estimated to cost US$2.2 billion, while its annual maintenance budget faced a shortfall of US$10–40 million [Rentschler et al., 2020]. This highlights the financial challenges of maintaining coastal protection and the need to consider alternative approaches.
+An alternative is to work with natural coastal environments. Mangroves are trees and shrubs that grow along tropical and subtropical coastlines, often in areas affected by tides. Their dense roots and vegetation can slow water before it reaches the shore. This process is called wave attenuation: the reduction in wave height as waves pass through an area. Research has identified mangroves as a possible nature-based approach to reducing coastal flood risk [Gijsman et al., 2021]. This article examines how they reduce wave energy, what affects their performance and whether they can complement engineered defences.
+
      </p>
   
   
  
-    <h3 id="Wave Behaviour & Mangrove Structures">Wave Behaviour & Mangrove Structures</h3>
-     <p id="WaveText">
-     This my wave beahviour and mangrove structures test section. 
+    <h3 id="How Mangroves Reduce Wave Energy">How Mangroves Reduce Wave Energy</h3>
+     <p id="EnergyText">
+     Mangrove roots, trunks and branches obstruct moving water. As waves pass through the vegetation, this resistance creates hydrodynamic drag, which is the force that slows water when it meets an obstacle. The movement also creates turbulence, or irregular motion within the water. As a result, waves can become smaller as they travel through the forest.
+The amount of wave reduction partly depends on vegetation density. Field research by Horstman et al. (2014) found that wave attenuation increased with the volume of vegetation in the forest. This suggests that areas with more vegetation can provide greater resistance to passing waves. However, vegetation density is not the only factor. Forest width, water depth and wave conditions also influence performance [Gijsman et al., 2021; van Hespen et al., 2023].
      </p>
     
      
-         <h3 id="Mechanisms of Wave Attenuation">Mechanisms of Wave Attenuation </h3>
+         <h3 id="Differences in Mangrove Structure">Differences in Mangrove Structure </h3>
          
-     <p id="MechText"> 
+     <p id="StructText"> 
      Wave attenuation describes the reduction in wave height and energy as waves travel through a coastal environment. In mangrove forests, this occurs through interactions between moving water and vegetation.
 The roots, trunks and branches hinder water movement, creating hydrodynamic drag. This resistance transfers energy from the moving water into turbulence and other forms of energy dissipation. As a result, less wave energy reaches the landward edge of the forest.
 Field research by Horstman et al. (2014) investigated wave attenuation across mangrove areas with different vegetation densities. Their findings demonstrated that wave attenuation rates increased with the volumes of vegetation density. This suggests that the amount of vegetation within a given space can influence the effectiveness of mangroves as natural wave barriers.
@@ -203,10 +205,10 @@ Forest width is another important factor. A wider forest provides a greater dist
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const WaveCount = displayWordCount("WaveText");
-    const MechCount = displayWordCount("MechText");
+    const EnergyCount = displayWordCount("EnergyText");
+    const StructCount = displayWordCount("MechText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + WaveCount + MechCount;
+    const totalWordCount = IntroductionCount + EnergyCount + StructCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
