@@ -7,7 +7,7 @@
     
 <header class="site-header">
   <body>
-	  <img src= "WebBanner 2026 .jpg" alt="University Banner" width="300" height="75">
+	  <img src= "WebBanner 2026 .jpg" alt="University Banner" width="400" height="100">
   			<hr>  
 <main class="paper-container">
   <p class="course-meta">ENG0018 Computer Laboratory 2026/27
@@ -69,29 +69,37 @@
        </tr>
 <!--Bookmark for table-->
        <tr>
-         <td><a href="#Abstract">Abstract</td>
+         <td><a href="#Abstract">Abstract</a></td>
        </tr>
 <!--Bookmark for table-->
        <tr>
-         <td><a href ="#Introduction">Introduction</td>
+         <td><a href ="#Introduction">Introduction</a></td>
            </tr>
          <tr>
 <!--Bookmark for table-->
-           <td><a href="#How Mangroves Reduce Wave Energy">How Mangroves Reduce Wave Energy</td>
+           <td><a href="#How Mangroves Reduce Wave Energy">How Mangroves Reduce Wave Energy</a></td>
          </tr>
 <!--Bookmark for table-->         
          <tr>
-           <td><a href="#Differences in Mangrove Structure">Differences in Mangrove Structure</td>
+           <td><a href="#Differences in Mangrove Structure">Differences in Mangrove Structure</a></td>
          </tr>
 <!--Bookmark for table-->
          <tr>
-           <td><a href="#References">References</td>
+           <td><a href="#Effectiveness & Limitions">Effectiveness & Limitations</a></td>
          </tr>
+<!--Bookmark for table-->
+        <tr>
+           <td><a href="#Hybrid Solution">Hybrid Solutions</a></td></tr>
+   
+<!--Bookmark for table-->
+        <tr>
+           <td><a href="#References">References</a></td></tr>
      </table>
 <!--Bookmark for table-->
         
       
-<hr>
+  
+  
   <h3 id="Abstract">Abstract</h3>
 <h5> 
 
@@ -126,8 +134,16 @@ Field research by Horstman et al. (2014) investigated wave attenuation across ma
 Forest width is another important factor. A wider forest provides a greater distance over which wave energy can be dissipated. Van Wesenbeeck et al. (2025) investigated this relationship through extensive numerical modelling. Their findings indicated that mangrove forests wider than 500 metres could dissipate approximately 75% or more of incoming wave energy under the modelled conditions. However, the effectiveness of narrower forests was more dependent on water levels, wave characteristics and vegetation density. 
      </p>
  
- 
-	<h3 id="References">References</h3>
+ <h3 id="Effectiveness & Limitations">Effectiveness & Limitations</h3>
+         
+     <p id="EffectText">
+     Mangroves provide benefits beyond reducing wave energy. Their roots help hold sediment in place, which can limit erosion and support coastal habitats. They also store carbon in their vegetation and surrounding soils. This is known as blue carbon and is an important environmental benefit of mangrove forests [Choudhary et al., 2024].
+However, mangroves cannot prevent every type of coastal flooding. Their effectiveness depends on the condition and development of the forest as well as the surrounding environment. Newly established seedlings, for example, do not provide the same level of protection as a mature forest. If trees die or vegetation becomes less dense, the forest's ability to reduce wave energy may also decrease [van Hespen et al., 2023]. It is also important to distinguish wave attenuation from storm surge. A storm surge is a rise in sea level caused by a storm, [Met Office, n.d.] whereas wave attenuation is the reduction of waves as they pass through vegetation. Mangroves may contribute to wider coastal protection, but engineers must consider other sources of flood risk when planning a defence system [Gijsman et al., 2021].
+	 </p>
+     
+ <!--Table of figure-->
+	
+    <h3 id="References">References</h3>
      
   <p> 
 	Choudhary, B., Dhar, V. and Pawase, A.S. (2024) ‘Blue carbon and the role of mangroves in carbon sequestration: Its mechanisms, estimation, human impacts and conservation strategies for economic incentives’, Journal of Sea Research, 199, article 102504. Available at: <a href = 'https://doi.org/10.1016/j.seares.2024.102504'>https://doi.org/10.1016/j.seares.2024.102504</a></p>
@@ -222,8 +238,9 @@ van Hespen, R., Hu, Z., Borsje, B., De Dominicis, M., Friess, D.A., Jevrejeva, S
     const IntroductionCount = displayWordCount("Introduction_InText");
     const EnergyCount = displayWordCount("EnergyText");
     const StructCount = displayWordCount("StructText");
+    const EffectCount = displayWordCount("EffectText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + EnergyCount + StructCount;
+    const totalWordCount = IntroductionCount + EnergyCount + StructCount + EffectCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
